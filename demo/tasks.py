@@ -11,3 +11,8 @@ def send_welcome_email(user_email, message, subject):
         fail_silently=False
     )
     return response
+
+@shared_task
+def generate_report(data):
+    """takes the data and generate the report card"""
+    return data
