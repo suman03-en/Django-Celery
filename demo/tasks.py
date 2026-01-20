@@ -16,4 +16,4 @@ def send_welcome_email(user_email, message, subject):
 def generate_report(data: dict):
     """takes the data and generate the report card"""
     filepath = generate_report_card(data)
-    return filepath
+    return f"PDF generated successfully: {filepath}"
