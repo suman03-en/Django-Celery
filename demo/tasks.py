@@ -13,6 +13,6 @@ def send_welcome_email(user_email, message, subject):
     return response
 
 @shared_task
-def generate_report(data):
+def generate_report(data: dict):
     """takes the data and generate the report card"""
     return data
